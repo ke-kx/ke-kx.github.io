@@ -41,15 +41,18 @@
 
     /* Donate button stays right */
     .donate-button {
-      width: 100px; /* fixed width for easier centering */
+      display: inline-block;
       text-align: center;
       background-color: #e63946;
       color: white;
-      padding: 0.5em 0;
+      padding: 0.5em 1em; /* Responsive padding */
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+      align-self: center; /* Aligns properly in .top-bar */
+      white-space: nowrap; /* Prevents wrapping if space allows */
     }
 
     .donate-button:hover {
@@ -64,6 +67,8 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
+      padding: 0 1rem; /* Adds spacing on left/right */
+      box-sizing: border-box;
     }
     h1 {
       text-align: center;
